@@ -1,0 +1,26 @@
+{
+	"name": "cron",
+	"version": "1.0.0",
+	"description": "do cron db job",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "NODE_ENV=production node -r esm app.js",
+		"dev": "nodemon -r esm app.js",
+		"pm2": "pm2 start npm --name cron -- start"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dropbox-v2-api": "^2.4.29",
+		"express": "^4.17.1",
+		"moment": "^2.29.1",
+		"moment-timezone": "^0.5.32",
+		"mysqldump": "^3.2.0",
+		"nodemon": "^2.0.6",
+		"pm2": "^4.5.0"
+	},
+	"devDependencies": {
+		"esm": "^3.2.25"
+	}
+}
